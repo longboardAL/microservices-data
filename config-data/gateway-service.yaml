@@ -24,8 +24,8 @@ spring:
         - id: book-service
           uri: lb://book-service
           predicates:
-            - Path=/book/**
-            #- Path=/marcasReloj/**
+            #- Path=/book/**
+            - Path=/marcasReloj/**
         - id: pet-service
           uri: lb://pet-service
           predicates:
