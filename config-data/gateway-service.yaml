@@ -21,7 +21,7 @@ spring:
           uri: lb://student-service
           predicates:
             - Path=/student/**
-        - id: book-service
+        - id: marcasReloj-service
           uri: lb://marcasReloj-service
           predicates:
             #- Path=/book/**
@@ -30,3 +30,7 @@ spring:
           uri: lb://pet-service
           predicates:
             - Path=/pet/**
+        - id: justificativo-service
+          uri: lb://justificativo-service
+          predicates:
+            - Path=/justificativo/**
