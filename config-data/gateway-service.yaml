@@ -24,7 +24,6 @@ spring:
         - id: marcasReloj-service
           uri: lb://marcasReloj-service
           predicates:
-            #- Path=/book/**
             - Path=/marcasReloj/**
         - id: pet-service
           uri: lb://pet-service
@@ -34,3 +33,11 @@ spring:
           uri: lb://justificativo-service
           predicates:
             - Path=/justificativo/**
+        - id: empleado-service
+          uri: lb://empleado-service
+          predicates:
+            - Path=/empleado/**
+        - id: horasExtras-service
+          uri: lb://horasExtras-service
+          predicates:
+            - Path=/horasExtras/**
