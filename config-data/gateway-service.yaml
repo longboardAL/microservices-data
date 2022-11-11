@@ -41,3 +41,7 @@ spring:
           uri: lb://horasExtras-service
           predicates:
             - Path=/horasExtras/**
+        - id: planillaSueldo-service
+          uri: lb://planillaSueldo-service
+          predicates:
+            - Path=/calculoPlanillas/**
