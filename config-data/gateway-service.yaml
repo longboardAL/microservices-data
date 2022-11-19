@@ -21,10 +21,10 @@ spring:
       globalcors:
        cors-configurations:
         '[/**]':
-         allowed-origin-patterns: '*'
-         allowed-methods: "*"
-         allowed-headers: "*"
-         allow-credentials: true
+        allowed-origin-patterns: '*'
+        allowed-methods: "*"
+        allowed-headers: "*"
+        allow-credentials: true
       routes:
         - id: student-service
           uri: lb://student-service
