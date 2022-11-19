@@ -16,6 +16,15 @@ spring:
       discovery:
         locator:
           enabled: true
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials, RETAIN_UNIQUE
+      globalcors:
+          cors-configurations:
+            '[/**]':
+            allowed-origins: "*"
+            allowed-methods: "*"
+            allowed-headers: "*"
+            allow-credentials: true
       routes:
         - id: student-service
           uri: lb://student-service
@@ -45,7 +54,3 @@ spring:
           uri: lb://planillaSueldo-service
           predicates:
             - Path=/calculoPlanillas/**
-        - id: reporteSueldo-service
-          uri: lb://reporteSueldo-service
-          predicates:
-            - Path=/ReporteSueldos/**
