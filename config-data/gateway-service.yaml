@@ -24,7 +24,7 @@ spring:
          allowed-origin-patterns: '*'
          allowed-methods: "*"
          allowed-headers: "*"
-        allow-credentials: true
+         allow-credentials: true
       routes:
         - id: student-service
           uri: lb://student-service
