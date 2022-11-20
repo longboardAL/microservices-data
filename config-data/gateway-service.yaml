@@ -30,8 +30,8 @@ spring:
           uri: lb://student-service
           predicates:
             - Path=/student/**
-        - id: marcasReloj-service
-          uri: lb://marcasReloj-service
+        - id: marcasreloj-service
+          uri: lb://marcasreloj-service
           predicates:
             - Path=/marcasReloj/**
         - id: pet-service
@@ -46,11 +46,11 @@ spring:
           uri: lb://empleado-service
           predicates:
             - Path=/empleado/**
-        - id: horasExtras-service
-          uri: lb://horasExtras-service
+        - id: horasextras-service
+          uri: lb://horasextras-service
           predicates:
             - Path=/horasExtras/**
-        - id: planillaSueldo-service
-          uri: lb://planillaSueldo-service
+        - id: planillasueldo-service
+          uri: lb://planillasueldo-service
           predicates:
             - Path=/calculoPlanillas/**
